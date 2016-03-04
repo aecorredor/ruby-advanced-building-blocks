@@ -60,7 +60,6 @@ module Enumerable
   end
 
   def my_inject(initial_value = nil)
-    running_total = nil
     running_total = self[0] unless initial_value
     running_total = initial_value unless initial_value.nil?
     self.my_each_with_index do |element, index|

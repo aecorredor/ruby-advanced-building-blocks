@@ -52,7 +52,7 @@ module Enumerable
     self.my_each { count += 1 } unless block_given? || item
     count
   end
-e
+
   def my_map
     result = []
     self.my_each_with_index { |element, index| result[index] = yield(element) }
